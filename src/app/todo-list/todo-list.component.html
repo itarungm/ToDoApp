@@ -1,0 +1,42 @@
+<div class="bdy">
+<h1 style="color: white;font-size: 50px;text-align: center;">ToDo List</h1>
+   
+
+    <div class="inp"><input name="Task1" #uname maxlength="8" placeholder="Add Tasks (Ex: Shopping, Outdoor..)" style="display:inline;width:40%;margin-left: 25%;margin-top:4%;" type="text" class="form-control" id="usr">
+    <button (click)="addtodo(uname)" style="margin-left:20px;margin-top: -5px; " type="button" class="btn btn-success">ADD</button>
+    <div class="card alert alert-success" *ngIf="count">
+        <div class="card-header"> Total Items</div>
+        <div class="card-body">{{count}}</div>
+    </div>
+    <div class="alert alert-danger card2" *ngIf="ck">
+        <div class="card-header"> Total Checked</div>
+        <div class="card-body">{{ck}}</div>
+    </div>
+
+    <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"> <div class="alert alert-warning card3" *ngIf="count==ck">
+        <div class="card-header">All Done</div>
+        <div class="card-body"> <img src="../../assets/images/dn.gif" alt="" width="130" height="100"> </div>
+        <audio src="../..//assets/tones/pika.mp3" autoplay></audio>
+    </div></a>
+
+    </div>
+    <br><br>
+    <div class="list-group" style="width: 46%;margin-left: 25%;">
+        <li class="list-group-item list-group-item-success" *ngFor="let user of users; let i = index">
+        <span id="count">#{{i+1}}</span><input #chek (click)="check(chek)" class="check" type="checkbox" name="" id=""> <span>{{user.name}}</span> <button style="margin-left:70%;" (click)="RemoveItem(i,chek)" class="btn btn-danger">X</button>
+        </li>
+    </div>
+</div>
+
+<div class="footer">
+
+</div>
+
+<script>
+    $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+  });
+</script>
+
+
+

@@ -1,0 +1,90 @@
+.bdy{
+    height: 55vh;
+}
+.check{
+margin-right: 10px;
+width: 25px;
+transform: scale(2); 
+color: red;
+outline: none;
+}
+h1{ position: relative;
+    top: -65px;
+    font-family: Oxanium;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.inp{
+ position: relative;
+ top: -60px;
+ margin-bottom: 0;
+}
+.list-group{
+    margin-top: -100px;
+}
+span{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.card{  margin-top: -50px;
+        float: right;
+        margin-right: 100px;
+        background-color: #d4edda;
+        width: 170px;
+        height: 150px;
+}
+.card2{
+    margin-top: 120px;
+        float: right;
+        margin-right: -170px;
+        width: 170px;
+        height: 150px;
+}
+.card3{
+    margin-top: 290px;
+        float: right;
+        margin-right: -170px;
+        width: 170px;
+        height: 150px;
+}
+.card-header{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.card2 .card-header{
+    font-size: 20px;
+}
+.card-body{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+}
+#count{
+    margin-right: 10px;
+}
+.footer{
+    z-index: -500;
+    position: relative;
+    top: -470px;
+    background-image: url(../../assets/images/back.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+    height: 50vh;
+    opacity: 0.2;
+}
+img{
+    margin-top: -15px;
+    margin-left: -20px;
+}
+.done{
+    padding: 10px;
+    width: 38%;
+    border-radius: 4px;
+    height: 50px;
+    margin: auto;
+    margin-left: 335px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}

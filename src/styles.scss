@@ -1,0 +1,33 @@
+
+body{
+    background-color: black;
+
+    
+}
+.strip{
+    font-family: Trade Winds;
+
+    width: 400px;
+    font-size: 15px;
+    margin-top: 35px;
+    color: black;
+    padding-right: 50px;
+    margin-left: -100px;
+    text-align: center;
+    background-color: cyan;
+    transform: rotate(-45deg);
+}
+.strip:hover{
+    background-color: cyan;
+    box-shadow: 0 0 10px cyan,
+                0 0 15px cyan,
+                0 0 20px cyan; 
+    transition: 0.5s;   
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}

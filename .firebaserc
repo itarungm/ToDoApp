@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "itarungmtodo": {
+      "hosting": {
+        "TODO": [
+          "itarungmtodo"
+        ]
+      }
+    }
+  }
+}
